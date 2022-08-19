@@ -14,7 +14,9 @@ const NavBar = () => {
           <Link to="/analysis">
             <button className="menu">분석하기</button>
           </Link>
-          <button className="menu">정보</button>
+          <Link to="/information">
+            <button className="menu">정보</button>
+          </Link>
           <div className="user-profile-container">
             <img src="/user_picture.svg" alt="user-profile" />
             <img

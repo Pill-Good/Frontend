@@ -5,6 +5,7 @@ import MedicineList from './pages/MedicineList'
 import SignUp from './pages/SignUp'
 import SignUpSuccess from './pages/SignUpSuccess'
 import Analysis from './pages/Analysis'
+import Information from './pages/Information'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/medicine-list" element={<MedicineList />} />
           <Route path="/signup/success" element={<SignUpSuccess />} />
           <Route path="/analysis" element={<Analysis />} />
+          <Route path="/information" element={<Information />} />
         </Routes>
       </BrowserRouter>
     </div>

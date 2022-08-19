@@ -4,6 +4,7 @@ import NavBar from '../components/common/NavBar'
 import NoticeBlock from '../components/main/NoticeBlock'
 import MenuItem from '../components/main/MenuItem'
 import { Link } from 'react-router-dom'
+import CalendarBlock from '../components/main/CalendarBlock'
 
 const Main = () => {
   return (
@@ -36,7 +37,9 @@ const Main = () => {
             </Link>
           </div>
         </div>
-        <div className="calendar-container"></div>
+        <div className="calendar-container">
+          <CalendarBlock />
+        </div>
       </MainWrapper>
     </>
   )
@@ -47,6 +50,8 @@ export default Main
 const MainWrapper = styled.div`
   width: 100%;
   padding: 0 10rem;
+  display: flex;
+  gap: 2rem;
   .notice-and-menu-container {
     width: 32.5rem;
     display: flex;
