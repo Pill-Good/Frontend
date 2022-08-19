@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
@@ -7,8 +8,12 @@ const NavBar = () => {
       <div className="nav-container">
         <img src="/Logo.svg" alt="logo" />
         <div className="menu-container">
-          <button className="menu">홈</button>
-          <button className="menu">분석하기</button>
+          <Link to="/">
+            <button className="menu">홈</button>
+          </Link>
+          <Link to="/analysis">
+            <button className="menu">분석하기</button>
+          </Link>
           <button className="menu">정보</button>
           <div className="user-profile-container">
             <img src="/user_picture.svg" alt="user-profile" />

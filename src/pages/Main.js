@@ -20,7 +20,7 @@ const Main = () => {
                 imgPath="/pill_icon.svg"
               />
             </Link>
-            <Link to="/login">
+            <Link to="/medicine-list">
               <MenuItem
                 firstTitle="복용 중인 약"
                 secondTitle="리스트"
