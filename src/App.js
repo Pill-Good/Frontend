@@ -4,6 +4,7 @@ import Main from './pages/Main'
 import MedicineList from './pages/MedicineList'
 import SignUp from './pages/SignUp'
 import SignUpSuccess from './pages/SignUpSuccess'
+import Landing from './pages/Landing'
 import Analysis from './pages/Analysis'
 import Information from './pages/Information'
 
@@ -13,6 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Main />} />
+          <Route exact path="/landing" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/medicine-list" element={<MedicineList />} />
