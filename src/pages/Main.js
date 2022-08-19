@@ -1,7 +1,15 @@
 import React from 'react'
+import styled from '@emotion/styled'
+import NavBar from '../components/common/NavBar'
 
 const Main = () => {
-  return <div>Main</div>
+  return (
+    <MainWrapper>
+      <NavBar />
+    </MainWrapper>
+  )
 }
 
 export default Main
+
+const MainWrapper = styled.div``
