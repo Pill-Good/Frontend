@@ -3,6 +3,7 @@ import Login from './pages/Login'
 import Main from './pages/Main'
 import SignUp from './pages/SignUp'
 import SignUpSuccess from './pages/SignUpSuccess'
+import Landing from './pages/Landing'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Main />} />
+          <Route exact path="/landing" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signup/success" element={<SignUpSuccess />} />
