@@ -3,10 +3,13 @@ import styled from '@emotion/styled'
 import Hello from '../components/signUp/Hello'
 import Button from '../components/signUp/Enter'
 import DotDot from '../components/common/dot'
+import NavBar from '../components/common/NavBar'
 
 const SignUpInput = () => {
   const arr = [20, 21, 22, 23, 24];
   return (
+    <>
+    <NavBar />
     <SignUpWrapper>
       <div>
         <Title>회원가입</Title>
@@ -48,12 +51,18 @@ const SignUpInput = () => {
         <Button>가입하기</Button>
       </div>
     </SignUpWrapper>
+    </>
   )
 }
 
 export default SignUpInput;
 
 const SignUpWrapper = styled.div`
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 const Select = styled.select`
@@ -65,6 +74,7 @@ const Select = styled.select`
   display: block;
   padding-left: 10px;
   color: #b4b4b4;
+  margin-bottom: 40px;
 `;
 
 const Title = styled.p`
@@ -85,3 +95,5 @@ const LineBox = styled.div`
   display: flex;
   align-items: center;
 `;
+
+
