@@ -12,7 +12,11 @@ const NavBar = () => {
           <button className="menu">정보</button>
           <div className="user-profile-container">
             <img src="/user_picture.svg" alt="user-profile" />
-            <img src="/under_arrow.svg" alt="under-arrow" />
+            <img
+              className="under-arrow"
+              src="/under_arrow.svg"
+              alt="under-arrow"
+            />
           </div>
         </div>
       </div>
@@ -28,6 +32,7 @@ const NavBarWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
   .nav-container {
     width: 75rem;
     height: 100%;
@@ -46,12 +51,20 @@ const NavBarWrapper = styled.div`
       background-color: transparent;
       font-size: 1.125rem;
       font-weight: 500;
+      :hover {
+        cursor: pointer;
+      }
     }
     .user-profile-container {
       width: 3.125rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .under-arrow {
+        :hover {
+          cursor: pointer;
+        }
+      }
     }
   }
 `
